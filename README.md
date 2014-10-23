@@ -28,4 +28,20 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je een paar al
 | Vagrant ssh'en                | `vagrant ssh (naam VM)` |
 | Vagrant status krijgen                | `vagrant status (evt. naam host)` |
 
+##Troubleshooting tips ##
 
+* Ip adressen: vi /etc/sysconfig/network-scripts/ifcfg-eth0
+* Service is depricated, gebruik in de plaats:
+    * _systemctl_ start httpd.service
+    * systemctl status httpd.service
+    * systemctl enable httpd.service
+    * systemctl disable httpd.service
+* In plaats van ifconfig, NU _ip add_ / _ip address_
+* Firewall: /etc/sysconfig/iptables
+    * systemctl restart iptables.service
+* tail /var/logs/messages
+* Default gateway: 
+    * netstat -rn
+    * route -n
+* DNS: /etc/resolv.conf
+* Vergeet niet de service 'remote' te testen (op je host-machine)
