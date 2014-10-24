@@ -44,4 +44,9 @@ nmblookup
 journalctl -f -u httpd.service <br>
 (-f betekent dat hij blijft openstaan)
 
+Firewall:
 
+2 manieren
+
+        - pakketje weggooien en negeren
+        - pakketje weggooien en reageren
