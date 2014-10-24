@@ -9,6 +9,7 @@
 4. Network laag: remote config
       - Ping de def gateway (*)
       - DNS servers: dig www.example.com @x.y.z.w
+      - --> yum install bind-utils (om dig te installeren)
 
 (*) Ping werkt niet altijd. Gebruik dus traceroute (```tracert```) in de plaats.
 
