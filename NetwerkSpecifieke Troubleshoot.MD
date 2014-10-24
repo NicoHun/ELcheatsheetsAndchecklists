@@ -10,6 +10,9 @@
       - Ping de def gateway (*)
       - DNS servers: dig www.example.com @x.y.z.w
       - --> yum install bind-utils (om dig te installeren)
+      - tcptraceroute (werkt soms ook met ICMP :/)
+5. !!!! yum install dig vind ie niet --> **yum provides '*'bin/dig** !!!!
+
 
 (*) Ping werkt niet altijd. Gebruik dus traceroute (```tracert```) in de plaats.
 
