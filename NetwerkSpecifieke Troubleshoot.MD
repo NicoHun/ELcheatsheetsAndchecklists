@@ -1,14 +1,14 @@
 
 ## Fysical/data link layer
-        Kabels ingeplugd?
-        Kabel niet kapot? (branden de lichtjes, aan beide kanten?)
-    Netwerk laag: lokale config
-        ```ip add```
-        def gateway? ip route
-        DNS : cat /etc/resolv.conf
-    Network laag: remote config
-        Ping de def gateway (*)
-        DNS servers: dig www.example.com @x.y.z.w
+1. Kabels ingeplugd?
+        - Kabel niet kapot? (branden de lichtjes, aan beide kanten?)
+2. Netwerk laag: lokale config
+      - `ip add`
+        - def gateway? ip route
+3. DNS : cat /etc/resolv.conf
+4. Network laag: remote config
+        - Ping de def gateway (*)
+        - DNS servers: dig www.example.com @x.y.z.w
 
 (*) Ping werkt niet altijd. Gebruik dus traceroute (```tracert```) in de plaats.
 
