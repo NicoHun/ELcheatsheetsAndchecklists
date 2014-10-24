@@ -39,4 +39,9 @@ zijn aan die versie ;-))
 
 nmblookup
 
+##LOGS ##
+
+journalctl -f -u httpd.service <br>
+(-f betekent dat hij blijft openstaan)
+
 
