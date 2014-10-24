@@ -18,3 +18,6 @@
     4) DNS
             -) /etc/resolv.conf
     Na aanpassingen telkens de network service herstarten (systemctl restart network.service)
+
+TIP: 
+**Open aparte terminal die de logs in realtime toont: ```journalctl -f```**
