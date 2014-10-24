@@ -65,8 +65,9 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je een paar al
 * ps | grep [naam_service]
 * Firewall: /etc/sysconfig/iptables
     * systemctl restart iptables.service
-* tail /var/logs/messages
+* tailof `less` /var/logs/messages
       * (en verdere logs in de directory logs)
+      * zoek dan naar DHCP op deze manier: /DHCP
 * _yum install nmap_...
 * nmap -p ftp,http*
 
