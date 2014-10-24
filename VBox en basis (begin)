@@ -1,0 +1,20 @@
+    Network Troubleshooting:
+    ------------------------
+     
+    1) Kabels checken!
+    2) IP adres -> ifconfig
+            - Geen IP adressen?
+              Network scripts aanpassen ( vi /etc/sysconfig/network-scripts/ifcfg-eth0 )
+                    Als het script niet bestaat => een ander kopiëren
+            - Foute IP adressen? Interfaces static of DHCP?
+              DHCP: Interface juist aangesloten (in VirtualBox) ?
+                    NAT: eerste NAT adapter op 1 VM krijgt 10.0.2.15/24, tweede 10.0.3.15/24, etc. (by default)
+                    Host-only: Aansluiten op een adapter die adressen uitgeeft met DHCP
+                               zie VirtualBox instellingen (of static IP instellen)
+              Static: Network script nakijken
+    3) Default gateway
+            -) netstat -rn
+            -) route -n
+    4) DNS
+            -) /etc/resolv.conf
+    Na aanpassingen telkens de network service herstarten (systemctl restart network.service)
