@@ -45,16 +45,10 @@ Wanneer een script niet runt in combinatie met een Windows-host (door einde-mark
 Run vervolgens `dos2unix` [script].
 
 ### Firewall en DNS ###
-* `lsof -i -n -P | grep` ... ( list open files, geeft lijst geopende bestanden en door welke processen deze gebruikt worden, weer) 
-<br>Opties:
-      * -i: sockets
-      * -n: gebruik geen DNS
-      * -P: toon poortnummers
-* arp [Adress Resolution Protocol config](http://xmodulo.com/how-to-add-or-remove-static-arp-entry-on-linux.html)
+* `lsof -i -n -P | grep` ... ( list open files, geeft lijst geopende bestanden en door welke processen deze gebruikt worden, weer)
 * Firewall: /etc/sysconfig/iptables
     * systemctl restart iptables.service
 * DNS: /etc/resolv.conf
-* `nmap -p ftp,http`
 
 ### Services controleren ###
 
