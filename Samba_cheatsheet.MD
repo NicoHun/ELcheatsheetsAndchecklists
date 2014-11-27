@@ -44,10 +44,6 @@ Wanneer een script niet runt in combinatie met een Windows-host (door einde-mark
 
 Run vervolgens `dos2unix` [script].
 
-### IP-adressen configureren ###
-* IP-adressen manueel aanpassen: vi /etc/sysconfig/network-scripts/ifcfg-eth0
-* `ping -c 5` [ip address]
-
 ### Firewall en DNS ###
 * `lsof -i -n -P | grep` ... ( list open files, geeft lijst geopende bestanden en door welke processen deze gebruikt worden, weer) 
 <br>Opties:
@@ -74,4 +70,3 @@ Run vervolgens `dos2unix` [script].
 * `tail -f less /var/logs/messages`
       * (en verdere logs in de directory logs)
       * zoek dan naar DHCP op deze manier: /DHCP
-
