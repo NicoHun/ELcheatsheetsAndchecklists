@@ -1,4 +1,9 @@
-##Troubleshooting tips ##
+EL Cheatsheets and checklists
+=============================
+
+_Nico Hunink (3 TIN HoGent)_ 
+
+### Samba_cheatsheet
 
 ### Tools
 * `yum install setroubleshoot`, gevolgd door: `restart auditd`
@@ -18,6 +23,7 @@
 | Status controleren                | `sestatus` |
 | Starten setroubleshoot (daemon)| `setroubleshootd` |
 | Herstellen initiële SELinux-settings| `restorecon -R -v [target-folder]`(bijv. /var/www) |
+| In de logs controleren op output van setroubleshoot | `grep setroubleshoot /var/log/messages` |
 | Config files SELinux | `/etc/selinux/config `                         |
 | Labeling controleren (optie -Z) | `ls -lZ [/usr/sbin/httpd]`                       |
 | Change context | `chcon` |
@@ -39,7 +45,6 @@ Wanneer een script niet runt in combinatie met een Windows-host (door einde-mark
 Run vervolgens `dos2unix` [script].
 
 ### IP-adressen configureren ###
-* In plaats van ifconfig, NU _ip add_ / _ip address_
 * IP-adressen manueel aanpassen: vi /etc/sysconfig/network-scripts/ifcfg-eth0
 * `ping -c 5` [ip address]
 
@@ -52,9 +57,6 @@ Run vervolgens `dos2unix` [script].
 * arp [Adress Resolution Protocol config](http://xmodulo.com/how-to-add-or-remove-static-arp-entry-on-linux.html)
 * Firewall: /etc/sysconfig/iptables
     * systemctl restart iptables.service
-* Default gateway: 
-    * `netstat -rn`
-    * `route -n`
 * DNS: /etc/resolv.conf
 * `nmap -p ftp,http`
 
@@ -69,7 +71,7 @@ Run vervolgens `dos2unix` [script].
     * systemctl status vsftpd.service
 * `top`
 * `ps | grep` [naam_service]
-* tailof `less` /var/logs/messages
+* `tail -f less /var/logs/messages`
       * (en verdere logs in de directory logs)
       * zoek dan naar DHCP op deze manier: /DHCP
 
