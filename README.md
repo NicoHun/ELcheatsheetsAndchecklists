@@ -5,7 +5,7 @@ Cheat sheets en checklists ivm Enterprise Linux
 
 ## Git (Bitbucket & GitHub)
 
-Hoewel je veel met aliases werkt, toch enkele commands voor mocht je een paar aliases vergeten zijn ;-)
+Hoewel je veel met aliases werkt, toch enkele commands voor mocht je je eigen niet ter beschikking hebben.
 
 | Actie                                  | Command                                    |
 | :---                                    | :---                                       |
@@ -16,15 +16,14 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je een paar al
 
 
 
-
 ## Vagrant
 
 | Actie                                  | Command                                    |
 | :---                                    | :---                                       |
 | Vagrant initialiseren                | `vagrant init .../box` |
 | Vagrant opzetten en booten | `vagrant up (evt. naam host toevoegen)`                         |
-| Vagrant box herladen (voor niet al te zware wijzigingen  | `vagrant reload (evt. naam host toevoegen)`                       |
-| Vagrant box wegdoen en opnieuw opzetten in 1 handeling (wnnr zware wijzigingen  | `vagrant destroy && up (evt. naam host toevoegen)`                       |
+| Vagrant box herladen (voor niet al te ingrijpende wijzigingen)  | `vagrant reload (evt. naam host toevoegen)`                       |
+| Vagrant box verwijderen en opnieuw opzetten in 1 handeling (wnnr ingrijpende wijzigingen)  | `vagrant destroy && up (evt. naam host toevoegen)`                       |
 | Vagrant ssh'en                | `vagrant ssh (naam VM)` |
 | Vagrant status krijgen                | `vagrant status (evt. naam host)` |
 
@@ -33,9 +32,9 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je een paar al
 * repoquery -qf */netstat */lsof */nmap
       * Wanneer niet geïnstalleerd: yum install yum-utils
 * Yum install net-tools
-* IP-conflicten opsporen: sudo yum install arp-scan
+* IP-conflicten opsporen: `sudo yum install arp-scan`
 <br> en 
-    arp-scan -I eth0 -l 
+    `arp-scan -I eth0 -l`
 
 * In plaats van ifconfig, NU _ip add_ / _ip address_
 * Ip adressen zelf aanpassen: vi /etc/sysconfig/network-scripts/ifcfg-eth0
