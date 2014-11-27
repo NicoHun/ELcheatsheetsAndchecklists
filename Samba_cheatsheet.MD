@@ -1,6 +1,6 @@
 ##Troubleshooting tips ##
 
-### Tools ### 
+### Tools
 * `yum install setroubleshoot`, gevolgd door: `restart auditd`
 * `journalctl`
 * `repoquery -qf */netstat */lsof */nmap`
