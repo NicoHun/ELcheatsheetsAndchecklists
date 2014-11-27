@@ -49,12 +49,12 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je je eigen ni
 | Herstellen initiële SELinux-settings| `restorecon -R -v [target-folder]`(bijv. /var/www) |
 | Config files selinux | `/etc/selinux/config `                         |
 | Labeling controleren (optie -Z) | `ls -lZ [/usr/sbin/httpd]`                       |
-|   | `vagrant destroy && up (evt. naam host toevoegen)`                       |
+| Change context | `chcon` |
 | Ingestelde booleans opvragen | `getsebool -a` (en evt. `| grep samba/smbd/nmbd`) |
 | Een boolean instellen| `setsebool [boolean] [0|1]` (-P toevoegen om permanent te maken) |
 | (na install setroubleshoot) | `sealert -l [de opgegeven code]` |
-| Change context | `chcon` |
 | Grafische tool| `system-config-selinux` |
+| SELinux-Alerts vinden in de logs | `sealert -a /var/log/audit/audit.log | less` |
 
 * ls -Z
 * netstat -Z
