@@ -36,4 +36,4 @@ Valideer network config van de server!
     - `sudo nmap -sS -p 80` (perform a TCP SYN scan on port 80 using `nmap`)
 6. Check firewall settings
     - `sudo iptables -L -n -v`
-    - `firewalld` oF `/etc/sysconfig/iptables` (vergeet niet te restarten na aanpassen firewallregels)
+    - `firewalld` OF `/etc/sysconfig/iptables` (vergeet niet te restarten na aanpassen firewallregels)
