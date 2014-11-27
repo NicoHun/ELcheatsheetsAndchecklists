@@ -2,11 +2,11 @@
 
 2 betekenissen!! 
     a) draait de service? 
-    b) wordt ie geblokkeerd? 
+    b) wordt deze geblokkeerd? 
 
 A) is de enige juiste interpretatie.
 
-B) kijk in je firewall, he. Juiste naam: is de poort geblokkeerd of niet? (NIET: staat de poort open of niet)
+B) kijk in uw firewall. Juiste naam: is de poort geblokkeerd of niet? (NIET: staat de poort open of niet)
 
 
 
@@ -20,6 +20,7 @@ ssh admin@127.0.0.1:2222
 
 
 - ss vervangt netstat
+
 ss -tulnp
 
 
@@ -31,7 +32,7 @@ Van buitenaf je poorten scannen.
 
 TCPSYN en daarna TCPACK (nmap doet de ACK niet)
 
-ERROR 404 : dan zit je al op Applicatilaag (want als de rest niet zou kloppen, 
+ERROR 404 : dan zit je al op Applicatielaag (want als de rest niet zou kloppen, 
 dan kun je deze fout nog niet eens krijgen.)
 
 
@@ -50,7 +51,7 @@ journalctl -f -u httpd.service <br>
 **/var/log/httpd/***
 
 
-Firewall:
+## Firewall: ##
 
 2 manieren
 
@@ -58,4 +59,4 @@ Firewall:
         - pakketje weggooien en reageren
 
 ## Bash-completion installeren ##
-die is nog completer dan de ingebouwde (omdat deze ook opties erbij steekt)
+--> deze is nog completer dan de ingebouwde (omdat deze ook opties erbij steekt)
