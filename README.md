@@ -31,28 +31,35 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je je eigen ni
 
 * repoquery -qf */netstat */lsof */nmap
       * Wanneer niet geïnstalleerd: yum install yum-utils
-* Yum install net-tools
+* `Yum install net-tools`
 * IP-conflicten opsporen: `sudo yum install arp-scan`
 <br> en 
     `arp-scan -I eth0 -l`
+###Testen ###
+
+Wanneer een bats-script niet runt in combinatie met een Windows-host:
+
+`yum install dos2unix -f`.
+
+Run vervolgens `dos2unix [je batsscript]`.
 
 * In plaats van ifconfig, NU _ip add_ / _ip address_
-* Ip adressen zelf aanpassen: vi /etc/sysconfig/network-scripts/ifcfg-eth0
-* ping -c 5 [ip address]
+* IP-adressen manueel aanpassen: vi /etc/sysconfig/network-scripts/ifcfg-eth0
+* `ping -c 5` [ip address]
 
 * lspci (al de PCI-bussen en apparaten van het systeem)
-* lsppci -n (identificatiecodes: laatste kolom cijfers en letters geven _Fabrikant:type apparaat_ weer )
+* `lsppci -n` (identificatiecodes: laatste kolom cijfers en letters geven _Fabrikant:type apparaat_ weer )
 * ~= >> 
     hwinfo
-* lsof -i -n -P | grep ... ( list open files, geeft lijst geopende bestanden en door welke processen deze gebruikt worden, weer) 
+* `lsof -i -n -P | grep` ... ( list open files, geeft lijst geopende bestanden en door welke processen deze gebruikt worden, weer) 
 <br>Opties:
       * -i: sockets
       * -n: gebruik geen DNS
       * -P: toon poortnummers
 * arp [Adress Resolution Protocol config](http://xmodulo.com/how-to-add-or-remove-static-arp-entry-on-linux.html)
 * Default gateway: 
-    * netstat -rn
-    * route -n
+    * `netstat -rn`
+    * `route -n`
 * DNS: /etc/resolv.conf
 
 * Service is depricated, gebruik in de plaats:
@@ -60,8 +67,8 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je je eigen ni
     * systemctl status httpd.service
     * systemctl enable httpd.service
     * systemctl disable httpd.service
-* top
-* ps | grep [naam_service]
+* `top`
+* `ps | grep` [naam_service]
 * Firewall: /etc/sysconfig/iptables
     * systemctl restart iptables.service
 * tailof `less` /var/logs/messages
