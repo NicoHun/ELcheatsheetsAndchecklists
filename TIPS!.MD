@@ -1,6 +1,7 @@
 ## Open poorten: ##
 
 2 betekenissen!! 
+
     a) draait de service? 
     b) wordt deze geblokkeerd? 
 
@@ -21,7 +22,7 @@ ssh admin@127.0.0.1:2222
 
 - ss vervangt netstat
 
-ss -tulnp
+- ss -tulnp
 
 
 ## nmap ##
@@ -59,4 +60,4 @@ journalctl -f -u httpd.service <br>
         - pakketje weggooien en reageren
 
 ## Bash-completion installeren ##
---> deze is nog completer dan de ingebouwde (omdat deze ook opties erbij steekt)
+--> deze is nog completer dan de ingebouwde (omdat deze ook opties voorstelt)
