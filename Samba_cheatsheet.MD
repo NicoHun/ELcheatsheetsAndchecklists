@@ -7,7 +7,7 @@ _Nico Hunink (3 TIN HoGent)_
 
 ### Tools
 * `yum install setroubleshoot`, gevolgd door: `service auditd restart`
-* yum install xorg-x11-xauth policycoreutils-gui bitmap-fixed-fonts
+* `yum install xorg-x11-xauth policycoreutils-gui bitmap-fixed-fonts`
 * `yum install net-tools`
 * `repoquery -qf */netstat */lsof */nmap`
       * Wanneer niet geïnstalleerd: `yum install yum-utils`
