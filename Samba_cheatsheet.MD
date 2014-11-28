@@ -6,8 +6,7 @@ _Nico Hunink (3 TIN HoGent)_
 ### Samba_cheatsheet
 
 ### Tools
-* `yum install setroubleshoot`, gevolgd door: `restart auditd`
-* `journalctl`
+* `yum install setroubleshoot`, gevolgd door: `service auditd restart`
 * `repoquery -qf */netstat */lsof */nmap`
       * Wanneer niet geïnstalleerd: `yum install yum-utils`
 * `yum install net-tools`
