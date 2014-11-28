@@ -12,6 +12,7 @@ _Nico Hunink (3 TIN HoGent)_
     * systemctl status nmb.service (daemon)
 * FTP: 
     * systemctl status vsftpd.service
+
 2) Samba config-file controleren
 
 `testparm smb.conf`
