@@ -47,4 +47,5 @@ Zie cheatsheet en
 Wanneer niet weergegeven, Controleer `inetd.conf`-file
 
 9) Zoek het IP-adres van de master browser van de werkgroep
+
 `nmblookup -M [naamWerkgroep]`
