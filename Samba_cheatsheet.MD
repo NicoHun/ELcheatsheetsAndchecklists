@@ -53,8 +53,6 @@ Run vervolgens `dos2unix [script]`.
 
 ### Services controleren ###
 
-* Service is depricated, gebruik in de plaats:
-    * _systemctl_ start httpd.service
 * SAMBA: 
     * systemctl status smb.service (daemon)
     * systemctl status nmb.service (daemon)
