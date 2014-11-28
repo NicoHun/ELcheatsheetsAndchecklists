@@ -59,7 +59,8 @@ Run vervolgens `dos2unix` [script].
     * systemctl status nmb.service (daemon)
 * FTP: 
     * systemctl status vsftpd.service
-* `top`
+*  `journalctl  -r -o verbose -u smb.service`
+*  `journalctl  -r -o verbose -u nmb.service`
 * `ps | grep` [naam_service]
 * `tail -f less /var/logs/messages`
       * (en verdere logs in de directory logs)
