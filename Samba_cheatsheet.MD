@@ -7,13 +7,15 @@ _Nico Hunink (3 TIN HoGent)_
 
 ### Tools
 * `yum install setroubleshoot`, gevolgd door: `service auditd restart`
+* yum install xorg-x11-xauth policycoreutils-gui bitmap-fixed-fonts
+* `yum install net-tools`
 * `repoquery -qf */netstat */lsof */nmap`
       * Wanneer niet geïnstalleerd: `yum install yum-utils`
-* `yum install net-tools`
 * IP-conflicten opsporen: `sudo yum install arp-scan`
 <br> en 
     `arp-scan -I eth0 -l`
 * _yum install nmap_
+
 
 ###SELinux ###
 
@@ -41,7 +43,7 @@ Wanneer een script niet runt in combinatie met een Windows-host (door einde-mark
 
 `yum install dos2unix -f`.
 
-Run vervolgens `dos2unix` [script].
+Run vervolgens `dos2unix [script]`.
 
 ### Firewall en DNS ###
 * `lsof -i -n -P | grep` ... ( list open files, geeft lijst geopende bestanden en door welke processen deze gebruikt worden, weer)
