@@ -1,7 +1,9 @@
-EL Cheatsheets and checklists - Nico Hunink (3 TIN HoGent)
+EL Cheatsheets and checklists
 =============================
 
-# Samba_troubleshooting_checklist #
+_Nico Hunink (3 TIN HoGent)_ 
+
+### Samba_troubleshooting_checklist
 
 1) Services controleren
 
@@ -17,17 +19,21 @@ EL Cheatsheets and checklists - Nico Hunink (3 TIN HoGent)
 3) Check DNS: is deze actief en werkt deze correct?
 `cat /etc/resolv.conf`
 
-4) Firewall controleren
+4) SELinux-instellingen controleren
+Zie cheatsheet en 
+`ausearch -m avc -ts recent -i`
+`grep setroubleshoot /var/log/messages`
+
+5) Firewall controleren
 `iptables -L -v`
 
-5) Shares controleren
+6) Shares controleren
 `smbclient -L [naam server]`
 
-6) Zoek het IP-adres van de Samba-server
+7) Zoek het IP-adres van de Samba-server
 nmblookup -B [naamServer] __SAMBA__
 
 Wanneer niet weergegeven, Controleer `inetd.conf`-file
 
-7) Zoek het IP-adres van de master browser van de werkgroep
+8) Zoek het IP-adres van de master browser van de werkgroep
 nmblookup -M [naamWerkgroep]
-
