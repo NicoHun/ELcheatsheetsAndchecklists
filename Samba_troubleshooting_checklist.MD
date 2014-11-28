@@ -13,33 +13,38 @@ _Nico Hunink (3 TIN HoGent)_
 * FTP: 
     * systemctl status vsftpd.service
 
-2) Samba config-file controleren
+2) Logs controleren
+
+*	journalctl -r -o verbose -u smb.service 
+*	journalctl -r -o verbose -u nmb.service 
+
+3) Samba config-file controleren
 
 `testparm smb.conf`
 
-3) Check DNS: is deze actief en werkt deze correct?
+4) Check DNS: is deze actief en werkt deze correct?
 
 `cat /etc/resolv.conf`
 
-4) SELinux-instellingen controleren
+5) SELinux-instellingen controleren
 
 Zie cheatsheet en
 - `ausearch -m avc -ts recent -i`
 - `grep setroubleshoot /var/log/messages`
 
-5) Firewall controleren
+6) Firewall controleren
 
 `iptables -L -v`
 
-6) Shares controleren
+7) Shares controleren
 
 `smbclient -L [naam server]`
 
-7) Zoek het IP-adres van de Samba-server
+8) Zoek het IP-adres van de Samba-server
 
 `nmblookup -B [naamServer] __SAMBA__`
 
 Wanneer niet weergegeven, Controleer `inetd.conf`-file
 
-8) Zoek het IP-adres van de master browser van de werkgroep
+9) Zoek het IP-adres van de master browser van de werkgroep
 `nmblookup -M [naamWerkgroep]`
