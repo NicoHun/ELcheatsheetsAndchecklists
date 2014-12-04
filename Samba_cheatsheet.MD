@@ -30,12 +30,12 @@ _Nico Hunink (3 TIN HoGent)_
 | Change context | `chcon` |
 | Ingestelde booleans opvragen | `getsebool -a` (en evt. `| grep samba/smbd/nmbd`) |
 | Een boolean instellen| `setsebool [boolean] [0|1]` (-P toevoegen om permanent te maken) |
-| (na install setroubleshoot) | `sudo sealert -l [de opgegeven code]` |
-| Grafische tool| `sudo system-config-selinux` |
-| SELinux-Alerts vinden in de logs | `sudo sealert -a /var/log/audit/audit.log | less` |
+| (na install setroubleshoot) | `sealert -l [de opgegeven code]` |
+| Grafische tool| `system-config-selinux` |
+| SELinux-Alerts vinden in de logs | `sealert -a /var/log/audit/audit.log | less` |
 
-* ls -Z
-* netstat -Z
+* `ls -Z`
+* `netstat -Z`
 
 ###Testen ###
 
