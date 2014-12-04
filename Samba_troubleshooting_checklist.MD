@@ -5,6 +5,8 @@ _Nico Hunink (3 TIN HoGent)_
 
 ### Samba_troubleshooting_checklist
 
+0) Hardware check (kabels!)
+
 1) Services controleren
 
 * SAMBA: 
@@ -16,7 +18,9 @@ _Nico Hunink (3 TIN HoGent)_
 2) Logs controleren
 
 *	journalctl -r -o verbose -u smb.service 
-*	journalctl -r -o verbose -u nmb.service 
+*	journalctl -r -o verbose -u nmb.service
+*  journalctl –f (aparte terminal )
+*  /var/log/samba*
 
 3) Samba config-file controleren
 
@@ -34,7 +38,7 @@ Zie cheatsheet en
 
 6) Firewall controleren
 
-`iptables -L -v`
+`iptables -L -v` / `firewalld-cmd –list-all`  /  `ss -tulpn`
 
 7) Shares controleren
 
@@ -44,7 +48,7 @@ Zie cheatsheet en
 
 `nmblookup -B [naamServer] __SAMBA__`
 
-Wanneer niet weergegeven, Controleer `inetd.conf`-file
+Wanneer niet weergegeven, controleer `inetd.conf`-file.
 
 9) Zoek het IP-adres van de master browser van de werkgroep
 
