@@ -29,7 +29,7 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je je eigen ni
 
 ##Troubleshooting tips ##
 
-### Tools ### 
+### Tools
 * `yum install setroubleshoot`, gevolgd door: `restart auditd`
 * `journalctl`
 * `repoquery -qf */netstat */lsof */nmap`
@@ -58,8 +58,8 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je je eigen ni
 
 * ls -Z
 * netstat -Z
-* 
-###Testen ###
+ 
+###Testen###
 
 Wanneer een script niet runt in combinatie met een Windows-host (door einde-markeringen, eigen aan Microsoft):
 
