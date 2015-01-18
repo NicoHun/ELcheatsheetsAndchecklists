@@ -2,7 +2,7 @@
     ------------------------
      
     1) Kabels checken!
-    2) IP adres -> ifconfig
+    2) IP adres -> ip a
             - Geen IP adressen?
               Network scripts aanpassen ( vi /etc/sysconfig/network-scripts/ifcfg-eth0 )
                     Als het script niet bestaat => een ander kopiëren
