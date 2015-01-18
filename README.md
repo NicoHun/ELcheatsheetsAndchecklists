@@ -22,8 +22,8 @@ Hoewel je veel met aliases werkt, toch enkele commands voor mocht je je eigen ni
 | :---                                    | :---                                       |
 | Vagrant initialiseren                | `vagrant init .../box` |
 | Vagrant opzetten en booten | `vagrant up (evt. naam host toevoegen)`                         |
-| Vagrant box herladen (voor niet al te ingrijpende wijzigingen)  | `vagrant reload (evt. naam host toevoegen)`                       |
-| Vagrant box verwijderen en opnieuw opzetten in 1 handeling (wnnr ingrijpende wijzigingen)  | `vagrant destroy && up (evt. naam host toevoegen)`                       |
+| Vagrant machine herladen (voor niet al te ingrijpende wijzigingen)  | `vagrant reload (evt. naam host toevoegen)`                       |
+| Vagrant machine verwijderen en opnieuw opzetten in 1 handeling (wnnr ingrijpende wijzigingen)  | `vagrant destroy && up (evt. naam host toevoegen)`                       |
 | Vagrant ssh'en                | `vagrant ssh (naam VM)` |
 | Vagrant status krijgen                | `vagrant status (evt. naam host)` |
 
